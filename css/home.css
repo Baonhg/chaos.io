@@ -1,0 +1,435 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+.btn {
+  border-radius: 5rem;
+  background: #333;
+  color: #fff;
+  padding: 1rem 2.5rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background: rgb(253, 84, 112);
+}
+section {
+  padding: 2rem 9%;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 10;
+  box-shadow: 0 0.5rem 1rem rgb(0, 0, 0, 0.1);
+}
+
+.main-header{
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+.main-header .navbar{
+  display: flex;
+  flex-wrap: nowrap;
+  text-wrap: nowrap;
+}
+
+
+.main-header .icons{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+header .logo span {
+  color: rgb(253, 84, 112);
+}
+
+header .logo {
+  font-size: 3rem;
+  color: #333;
+  font-weight: bolder;
+}
+header .navbar a {
+  font-size: 2rem;
+  padding: 0 10px;
+  color: #666;
+  text-decoration: none;
+  position: relative;
+  transition: .3s ease-in-out;
+}
+
+/**/
+header .navbar a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: rgb(253, 84, 112);
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover{
+  color: rgb(253, 84, 112);
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+.icons a {
+  color: #fff;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+header .icons a {
+  font-size: 2.5rem;
+  color: #333;
+  margin-left: 1.5rem;
+  transition: .3s ease-in-out;
+}
+header .icons a:hover {
+  color: rgb(253, 84, 112);
+}
+
+
+ .burger-menu{
+  display: none;
+  cursor: pointer;
+}
+
+ .burger-menu .bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(0, 0, 0);
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  min-height: 90vh;
+  background: url(../img/bannerWeb.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: .5s ease;
+}
+.home .content {
+  max-width: 50rem;
+}
+.home .content h3 {
+  font-size: 6rem;
+  color: #333;
+}
+.home .content span {
+  font-size: 3.5rem;
+  color: rgb(253, 84, 112);
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+.home .content p {
+  font-size: 1.5rem;
+  color: #999;
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+.home {
+  width: auto;
+  height: 50%;
+}
+
+.aboutProduct {
+  display: flex;
+  gap: 10px;
+  padding-top: 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.productLeft{
+  width: 50%;
+}
+
+.productLeft img{
+  width: 100%;
+}
+
+.productRight{
+  width: 50%;
+}
+
+.productRight img{
+  width: 100%;
+}
+
+.productRight .picture {
+ display: flex;
+ gap: 10px;
+}
+
+.productRight .picture >*{
+  width: 50%;
+}
+
+.productRight .picture .pic1 img{
+  height: 100%;
+}
+
+.productRight .picture .pic2 img{
+  height: 85%;
+}
+
+.titleProduct{
+  font-size: 2rem;
+}
+
+.information span{
+  font-size: 1.2rem;
+}
+
+.slogan {
+  margin-top: 50px;
+  padding: 50px 10px;
+  background: 0% 0% / cover no-repeat rgb(243, 220, 226);
+}
+
+.main-slogan{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-slogan p {
+  font-weight: bolder;
+  font-size: 2rem;
+  text-align: center;
+  color: #666;
+}
+
+.best-seller{
+  margin-top: 80px;
+}
+
+.title-best {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.product-seller img{
+  margin: 0 auto;
+ 
+}
+
+.main-best-seller {
+  width: 80%;
+  margin: 80px auto;
+}
+
+.product-seller img {
+  width: 100% !important;
+  height: 300px !important;
+  margin: 0 auto;
+
+}
+.product-seller h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 10px;
+}
+.shop-best {
+  text-align: center;
+}
+.footer {
+  margin-top: 20px;
+}
+.footer .box-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .box-container .box {
+  width: 25%;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  color: #333;
+}
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  color: #666;
+}
+
+.footer .box-container .box a:hover {
+  color: rgb(253, 84, 112);
+}
+
+.footer .box-container .box img {
+  width: 150px;
+  margin-top: 10px;
+}
+
+.sidescroll {
+  opacity: 0;
+}
+
+.sidescroll.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.transition-img-1{
+  transform: translateX(-50%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.transition-img-2{
+  transform: translateX(-150%);
+  transition: opacity 1.5s ease, transform 1s ease;
+}
+
+.transition-img-3{
+  transform: translateX(-250%);
+  transition: opacity 2.5s ease, transform 1.5s ease;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+ h2, h3, p, span, a {
+  opacity: 0;
+  animation: fade-in 4s ease forwards;
+}
+
+
+@media screen and (max-width: 1280px) {
+ 
+}
+
+@media screen and (max-width: 991px) {
+  header .navbar a{
+    font-size: 16px;
+  }
+
+  header .icons a {
+    font-size: 20px;
+  }
+
+  .titleProduct{
+    font-size: 2rem;
+  }
+  
+  .information span{
+    font-size: 1.5rem;
+  }
+
+  .aboutProduct{
+    flex-direction: column;
+  }
+
+  .aboutProduct >*{
+    width: 100%;
+  }
+
+  .productRight .titleProduct{
+    margin-bottom: 10px;
+  }
+
+  .productRight .picture{
+    margin-top: 20px;
+  }
+  .footer .box-container .box {
+    width: 50%;
+  }
+  
+}
+@media screen and (max-width: 768px) {
+
+.main-header .burger-menu{
+  display: block;
+}
+
+.burger-menu.active .bar:nth-child(2){
+  opacity: 0;
+}
+
+.burger-menu.active .bar:nth-child(1){
+
+  transform: translateY(8px) rotate(45deg);
+}
+
+ .burger-menu.active .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.main-header .navbar{
+  display: none;
+}
+
+.main-header .icons{
+  position: absolute;
+  right: 75px;
+  transition: all 0.2s ease-in-out;
+}
+
+.main-header .navbar.active{
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 75px;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 100%;
+  box-shadow: 0 0.5rem 1rem rgb(0, 0, 0, 0.1);
+}
+
+.main-header .navbar.active a{
+  margin: 16px 50px;
+  font-size: 20px;
+}
+.footer .box-container .box {
+  width: 100%;
+}
+
+
+}
+
+@media screen and (max-width: 450px) {
+
+  
+}
